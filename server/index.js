@@ -25,12 +25,13 @@ app.use('/api/taxes/:id', createProxyMiddleware({ target: 'http://localhost:3001
 
 app.use('/api/taxes/state/:state', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
 
-app.use('/api/listing', createProxyMiddleware({ target: 'http://localhost:3003', changeOrigin: true }));
+app.use('/api/listings', createProxyMiddleware({ target: 'http://localhost:3003', changeOrigin: true }));
 
 app.use('/api/listing/like/:id', createProxyMiddleware({ target: 'http://localhost:3003', changeOrigin: true }));
 
 app.use('/api/listing/unlike/:id', createProxyMiddleware({ target: 'http://localhost:3003', changeOrigin: true }));
 
+app.use('/style.css', createProxyMiddleware({ target: 'http://localhost:3003', changeOrigin: true }));
 
 app.listen(3000, () => {
   console.log(`Example app listening at http://localhost:${port}`)
