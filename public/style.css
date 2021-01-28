@@ -9,6 +9,12 @@
   border-bottom: 1px solid #dbdbdb;
 }
 
+#gallery, #similarHomesCarousel {
+  position: relative;
+  transform: scale(1.1);
+  overflow: visible;
+}
+
 #gallery {
   display: block;
   position: relative;
@@ -28,9 +34,16 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-left: -47px;
+  margin: 130px 0 50px -11.5%;
 }
 
 #similarHomesCarousel {
-  margin-left: 20px;
+  margin-left: 40px;
+}
+
+.finalCredits {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-left: 0;
 }
