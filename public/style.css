@@ -1,0 +1,20 @@
+.nav-bar {
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: -12px;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+#gallery {
+  position: relative;
+  top: 70px;
+}
+#gallery-modal-root {
+  z-index: 99;
+}
+#photo-modal-root {
+  z-index: 100;
+}
