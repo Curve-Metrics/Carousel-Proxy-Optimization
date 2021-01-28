@@ -8,22 +8,13 @@ const { createProxyMiddleware } = require('http-proxy-middleware');
 app.use(cors());
 app.use('/', express.static('public'));
 
-
 app.use('/api/photoGallery', createProxyMiddleware({ target: 'http://localhost:3002', changeOrigin: true }));
 
-app.use('/api/photoGallery', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
+app.use('/houses', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
 
-app.use('/api/houses/:id', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
+app.use('/loans', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
 
-app.use('/api/houses/random', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
-
-app.use('/api/loans/:id', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
-
-app.use('/api/loans/random', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
-
-app.use('/api/taxes/:id', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
-
-app.use('/api/taxes/state/:state', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
+app.use('/taxes', createProxyMiddleware({ target: 'http://localhost:3001', changeOrigin: true }));
 
 app.use('/api/listings', createProxyMiddleware({ target: 'http://localhost:3003', changeOrigin: true }));
 
