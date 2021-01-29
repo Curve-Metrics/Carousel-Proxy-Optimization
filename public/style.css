@@ -23,6 +23,7 @@
 }
 
 #gallery-modal-root {
+
   z-index: 99;
 }
 
@@ -39,6 +40,10 @@
 
 #similarHomesCarousel {
   margin-left: 40px;
+}
+
+#calculator {
+
 }
 
 .finalCredits {
