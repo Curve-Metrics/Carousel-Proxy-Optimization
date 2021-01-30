@@ -11,7 +11,7 @@
 
 #gallery, #similarHomesCarousel {
   position: relative;
-  transform: scale(1.1);
+  /* transform: scale(1.1); */
   overflow: visible;
 }
 
@@ -32,10 +32,20 @@
 }
 
 .descWrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 130px 0 50px -11.5%;
+  display: block;
+  max-width: 960px;
+  margin: auto;
+  padding-bottom: 30px;
+}
+
+.description {
+  display: block;
+  position: relative;
+  align-self: flex-start;
+  margin-left: 55px;
+  top: 30px;
+  left: -40px;
+  padding-right: 200px;
 }
 
 #similarHomesCarousel {
@@ -43,12 +53,21 @@
 }
 
 #calculator {
-
+  position: relative;
+  bottom: 60px;
+  left: 5px;
 }
 
 .finalCredits {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-left: 0;
+  display: block;
+  max-width: 960px;
+  margin: auto;
+  position: relative;
+  top: -100px;
+}
+
+.credits {
+  display: block;
+  position: relative;
+  left: 20px;
 }
