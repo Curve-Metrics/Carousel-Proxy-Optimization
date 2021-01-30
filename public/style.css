@@ -11,20 +11,16 @@
 
 #gallery, #similarHomesCarousel {
   position: relative;
-  /* transform: scale(1.1); */
   overflow: visible;
 }
 
 #gallery {
   display: block;
   position: relative;
-  top: 30px;
-  margin: 70px;
 }
 
 #gallery-modal-root {
-  position: relative;
-  padding-top: 75px;
+  position: fixed;
   z-index: 100;
 }
 
